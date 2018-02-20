@@ -9,6 +9,7 @@ body{
   font-family:"Spectral", serif;
   font-size:18px;
   color:#424242;
+  background-color:#f5f5f5;
 }
 
 h1,h2,h3,h4{
@@ -17,7 +18,8 @@ h1,h2,h3,h4{
   margin-top:0;
 }
 
-a{
+a,
+input[type="submit"]{
   -webkit-transition:all .3s ease;
   transition:all .3s ease;
 }
@@ -44,6 +46,10 @@ a{
   background-color:#b9e937;
   color:#424242;
   text-decoration:none;
+}
+.contact-form .btn-alt:hover,
+.contact-form .btn-alt:focus{
+  background-color:#f5f5f5;
 }
 
 .masthead{
@@ -184,6 +190,10 @@ a{
   padding-top:40px;
   padding-bottom:40px;
 }
+.page-contact #main{
+  padding-top:0;
+  padding-bottom:0;
+}
 .icon-card{
   padding-top:170px;
   position:relative;
@@ -308,6 +318,32 @@ section>.container-fluid{
 #our-clients ul{
   padding-left:0;
   list-style-position:inside;
+}
+
+.contact-info-side,
+.form-side{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+.contact-info,
+.contact-form{
+  max-width:450px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.contact-info-side p{
+  line-height:1em;
+  margin-bottom:25px;
+}
+#google-map iframe{
+  height:100%;
+  width:100%;
+  min-height:420px
+}
+.contact-form .form-control{
+  background-color:#f5f5f5;
+  border-color:#424242;
+  border-radius:0;
 }
 
 footer{
