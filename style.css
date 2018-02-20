@@ -1,0 +1,409 @@
+/*
+  Theme Name: Main Street Tax Pros
+  Theme Author: The Childress Agency
+  Theme Author URI: https://childressagency.com
+  Version: 1.0
+*/
+
+body{
+  font-family:"Spectral", serif;
+  font-size:18px;
+  color:#424242;
+}
+
+h1,h2,h3,h4{
+  font-family:"Roboto", sans-serif;
+  font-weight:700;
+  margin-top:0;
+}
+
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.btn-main{
+  background-color:#b9e937;
+  font-family:"Roboto", sans-serif;
+  color:#424242;
+  border:1px solid #f5f5f5;
+  display:inline-block;
+  padding:3px 40px;
+  margin-top:25px;
+}
+.btn-main.btn-alt{
+  background-color:#424242;
+  color:#b9e937;
+}
+.btn-main:hover,
+.btn-main:focus{
+  background-color:#f5f5f5;
+  text-decoration:none;
+}
+.btn-main.btn-alt:hover,
+.btn-main.btn-alt:focus{
+  background-color:#b9e937;
+  color:#424242;
+  text-decoration:none;
+}
+
+.masthead{
+  background-color:#424242;
+}
+.masthead .phone,
+.masthead .email{
+  background-color:#b9e937;
+  width:275px;
+  color:#424242;
+  text-align:center;
+  font-size:14px;
+  font-family:"Roboto", sans-serif;
+}
+.masthead .phone{
+  float:left;
+  border-bottom-right-radius:20px; 
+}
+.masthead .email{
+  float:right;
+  border-bottom-left-radius:20px;
+}
+.masthead .header-logo>img{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+#header-nav{
+  background-color:#424242;
+}
+#header-nav .navbar-nav{
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+}
+#header-nav .navbar-nav>li>a{
+  color:#f5f5f5;
+  text-transform:capitalize;
+  font-variant:small-caps;
+}
+#header-nav .navbar-nav>li.active>a,
+#header-nav .navbar-nav>li>a:hover,
+#header-nav .navbar-nav>li>a:focus{
+  background-color:transparent;
+  color:#b9e937;
+}
+#header-nav #navbar{
+  text-align:center;
+}
+#header-nav .navbar-toggle{
+  border-color:#dfe0e1;
+}
+#header-nav .navbar-toggle .icon-bar{
+  background-color:#dfe0e1;
+}
+
+.message-bar{
+  background: rgba(1,185,7,1);
+  background: -moz-linear-gradient(left, rgba(1,185,7,1) 0%, rgba(185,233,55,1) 30%, rgba(185,233,55,1) 70%, rgba(1,185,7,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,185,7,1)), color-stop(30%, rgba(185,233,55,1)), color-stop(70%, rgba(185,233,55,1)), color-stop(100%, rgba(1,185,7,1)));
+  background: -webkit-linear-gradient(left, rgba(1,185,7,1) 0%, rgba(185,233,55,1) 30%, rgba(185,233,55,1) 70%, rgba(1,185,7,1) 100%);
+  background: -o-linear-gradient(left, rgba(1,185,7,1) 0%, rgba(185,233,55,1) 30%, rgba(185,233,55,1) 70%, rgba(1,185,7,1) 100%);
+  background: -ms-linear-gradient(left, rgba(1,185,7,1) 0%, rgba(185,233,55,1) 30%, rgba(185,233,55,1) 70%, rgba(1,185,7,1) 100%);
+  background: linear-gradient(to right, rgba(1,185,7,1) 0%, rgba(185,233,55,1) 30%, rgba(185,233,55,1) 70%, rgba(1,185,7,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b907', endColorstr='#01b907', GradientType=1 ); 
+  padding:5px;
+}
+.message-bar>p{
+  margin-bottom:0;
+  text-align:center;
+  font-size:14px;
+  font-family:"Roboto", sans-serif;
+  font-weight:700;
+}
+.message-bar>p>a{
+  color:#424242;
+}
+
+#hero{
+  background-color:#424242;
+}
+#hero .image-side{
+  height:570px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#hero .hp-hero-caption{
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  color:#fff;
+  text-align:center;
+  position:relative;
+  padding-top:180px;
+  padding-bottom:40px;
+}
+#hero .hp-hero-caption:before{
+  content:"";
+  position:absolute;
+  height:132px;
+  width:132px;
+  background-image:url(images/sprites.png);
+  background-position:0 0;
+  top:20px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+#hero .hp-hero-caption>h2{
+  font-size:52px;
+}
+#hero .btn-main{
+  margin-top:25px;
+}
+
+#hp-main{
+  background-image:url(images/mountains.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:#f5f5f5;
+  background-position:left bottom;
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#hp-main h1{
+  font-size:32px;
+}
+#hp-main p{
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.icon-card{
+  padding-top:170px;
+  position:relative;
+  text-align:center;
+  margin-top:25px;
+}
+.icon-card:before{
+  content:"";
+  position:absolute;
+  background-image:url(images/sprites.png);
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+#continuing-education.icon-card:before{
+  background-position:-150px 0px;
+  height:131px;
+  width:110px;
+  top:16px;
+}
+#professionalism.icon-card:before{
+  background-position:-280px 0px;
+  height:156px;
+  width:185px;
+  top:0;
+}
+#small-town-values.icon-card:before{
+  background-position:0px -160px;
+  height:76px;
+  width:134px;
+  top:50px;
+}
+#hp-main .btn-alt{
+  margin-top:80px;
+}
+
+#our-services>h1{
+  background-color:#424242;
+  color:#f5f5f5;
+  text-align:center;
+  margin-bottom:0;
+  padding:15px;
+  font-size:32px;
+}
+
+.service-card{
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#f5f5f5;
+  text-align:center;
+  position:relative;
+  height:425px;
+}
+.service-card .caption{
+  position:relative;
+  z-index:2;
+}
+.service-card .caption ul{
+  list-style:none;
+  padding-left:0;
+}
+.overlay{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,.5);
+}
+.service-card .caption>h2{
+  font-size:24px;
+}
+
+#contact-link{
+  background-color:#00b906;
+  color:#f5f5f5;
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#contact-link h2{
+  font-size:32px;
+}
+
+footer{
+  background-color:#424242;
+  color:#f5f5f5;
+  padding-bottom:40px;
+}
+#footer-nav{
+  text-align:center;
+}
+#footer-nav>.navbar-nav{
+  display:inline-block;
+  float:none;
+  vertical-align:middle;
+}
+#footer-nav>.navbar-nav>li>a{
+  color:#f5f5f5;
+  text-transform:capitalize;
+  font-variant:small-caps;
+}
+#footer-nav>.navbar-nav>li.active>a,
+#footer-nav>.navbar-nav>li>a:hover,
+#footer-nav>.navbar-nav>li>a:focus{
+  background-color:transparent;
+  color:#b9e937;
+  text-decoration:none;
+}
+#footer-contact>.container{
+  border-top:2px solid #00b906;
+  border-bottom:2px solid #00b906;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+#footer-contact p{
+  margin-bottom:0;
+  font-size:16px;
+  text-transform:capitalize;
+  font-variant:small-caps;
+}
+#footer-contact .address{
+  text-align:right;
+}
+#footer-contact .phone-email p:last-child{
+  text-transform:none;
+}
+#colophon-nav{
+  text-align:center;
+}
+#colophon-nav>.navbar-nav{
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+}
+#colophon-nav>.navbar-nav>li>a{
+  color:#666;
+  font-size:14px;
+  font-family:"Roboto", sans-serif;
+}
+#colophon-nav>.navbar-nav>li.active>a,
+#colophon-nav>.navbar-nav>li>a:hover,
+#colophon-nav>.navbar-nav>li>a:focus{
+  background-color:transparent;
+  color:#00b906;
+}
+.copyright p{
+  text-align:center;
+  color:#666;
+  margin-bottom:0;
+  font-size:14px;
+  font-family:"Roboto", sans-serif;
+}
+.copyright p>a{
+  color:#666;
+}
+.copyright p>a:hover,
+.copyright p>a:focus{
+  color:#00b906;
+  text-decoration:none;
+}
+
+
+@media (max-width:767px){
+  .masthead{
+    padding-top:10px;
+  }
+  .masthead .phone,
+  .masthead .email{
+    float:none;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    border-radius:20px;
+  }
+  #header-nav .header-logo>img{
+    display:inline;
+    margin-left:15px;
+  }
+  .service-card{
+    display:table;
+    width:100%;
+  }
+  .service-card .caption{
+    display:table-cell;
+    vertical-align:middle;
+  }
+  #footer-contact .address{
+    text-align:center;
+    margin-bottom:15px;
+  }
+  #footer-contact .phone-email{
+    text-align:center;
+    margin-top:15px;
+  }
+  #footer-nav>.navbar-nav,
+  #colophon-nav>.navbar-nav{
+    column-count:2;
+  }
+  .copyright{
+    margin-top:15px;
+  }
+  #hero .hp-hero-caption>h2{
+    font-size:36px;
+  }
+}
+@media (min-width:768px){
+  .container-sm-height{
+    display:table;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
+    vertical-align:middle;
+  }
+  .container-fluid.container-sm-height{
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+  }
+  .contianer-fluid.container-sm-height>.row{
+    margin-left:0;
+    margin-right:0;
+  }
+}
