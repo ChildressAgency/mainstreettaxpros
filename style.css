@@ -125,21 +125,27 @@ a{
   background-color:#424242;
 }
 #hero .image-side{
-  height:570px;
+  height:285px;
   background-repeat:no-repeat;
   background-size:cover;
 }
-#hero .hp-hero-caption{
+#hero.hp-hero .image-side{
+  height:570px;
+}
+#hero .hero-caption{
   max-width:500px;
   margin-left:auto;
   margin-right:auto;
   color:#fff;
   text-align:center;
   position:relative;
-  padding-top:180px;
+  padding-top:40px;
   padding-bottom:40px;
 }
-#hero .hp-hero-caption:before{
+#hero.hp-hero .hero-caption{
+  padding-top:180px;
+}
+#hero.hp-hero .hero-caption:before{
   content:"";
   position:absolute;
   height:132px;
@@ -152,11 +158,8 @@ a{
   margin-left:auto;
   margin-right:auto;
 }
-#hero .hp-hero-caption>h2{
+#hero .hero-caption>h2{
   font-size:52px;
-}
-#hero .btn-main{
-  margin-top:25px;
 }
 
 #hp-main{
@@ -176,6 +179,10 @@ a{
   max-width:900px;
   margin-left:auto;
   margin-right:auto;
+}
+#main{
+  padding-top:40px;
+  padding-bottom:40px;
 }
 .icon-card{
   padding-top:170px;
@@ -214,7 +221,16 @@ a{
   margin-top:80px;
 }
 
-#our-services>h1{
+section>.container,
+section>.container-fluid{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#our-services>.container-fluid{
+  padding-top:0;
+  padding-bottom:0;
+}
+.section-title{
   background-color:#424242;
   color:#f5f5f5;
   text-align:center;
@@ -255,11 +271,43 @@ a{
   background-color:#00b906;
   color:#f5f5f5;
   text-align:center;
-  padding-top:40px;
-  padding-bottom:40px;
 }
 #contact-link h2{
   font-size:32px;
+}
+
+.about-row-icon{
+  background-image:url(images/sprites.png);
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:40px;
+}
+.about-row-content{
+  margin-top:40px;
+}
+#continuing-education.about-row-icon{
+  background-position:-150px 0px;
+  height:131px;
+  width:110px;
+}
+#professionalism.about-row-icon{
+  background-position:-280px 0px;
+  height:156px;
+  width:185px;
+}
+#small-town-values.about-row-icon{
+  background-position:0px -160px;
+  height:76px;
+  width:134px;
+}
+
+.team-row{
+  margin-top:40px;
+}
+
+#our-clients ul{
+  padding-left:0;
+  list-style-position:inside;
 }
 
 footer{
@@ -405,5 +453,13 @@ footer{
   .contianer-fluid.container-sm-height>.row{
     margin-left:0;
     margin-right:0;
+  }
+  #our-clients ul{
+    column-count:3;
+  }
+}
+@media (min-width:992px){
+  #our-clients ul{
+    column-count:4;
   }
 }
