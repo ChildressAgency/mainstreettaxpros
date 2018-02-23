@@ -346,6 +346,37 @@ section>.container-fluid{
   border-radius:0;
 }
 
+.resources-nav .resource>a{
+  font-size:26px;
+  font-family:"Roboto", sans-serif;
+  font-weight:700;
+  color:#424242;
+}
+.resources-nav .resources-sub-nav>li>a,
+.resources-nav .resources-sub-sub-nav>li>a{
+  color:#424242;
+  font-weight:500;
+}
+.resources-nav .resources-sub-sub-nav{
+  padding-left:25px;
+}
+.resources-nav .resources-sub-sub-nav>li>a{
+  font-size:14px;
+}
+.resources-nav li>a{
+  padding-top:0;
+  padding-bottom:0;
+}
+.resources-nav .resource{
+  margin-bottom:40px;
+}
+.resources-nav li.active>a,
+.resources-nav li>a:hover,
+.resources-nav li>a:focus{
+  color:#b9e937;
+  background-color:transparent;
+}
+
 footer{
   background-color:#424242;
   color:#f5f5f5;
@@ -492,6 +523,9 @@ footer{
   }
   #our-clients ul{
     column-count:3;
+  }
+  .resources-sidebar{
+    border-right:1px solid #424242;
   }
 }
 @media (min-width:992px){
