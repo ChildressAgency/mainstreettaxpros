@@ -284,13 +284,24 @@ function mainstreettaxpros_header_fallback_menu(){ ?>
   </div>
 <?php }
 
-function mainstreettaxpros_header_fallback_menu(){
+function mainstreettaxpros_footer_fallback_menu(){ ?>
+  <ul class="nav navbar-nav">
+    <li><a href="<?php echo home_url('services'); ?>">Services</a></li>
+    <li><a href="<?php echo home_url('about-us'); ?>">About Us</a></li>
+    <li><a href="<?php echo home_url('resources'); ?>">Resources</a></li>
+    <li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+  </ul>
+<?php }
 
-}
-
-function mainstreettaxpros_colophon_fallback_menu(){
-
-}
+function mainstreettaxpros_colophon_fallback_menu(){ ?>
+  <ul class="nav navbar-nav">
+    <li><a href="https://www.securefirmportal.com/Account/Login/9186">Login</a></li>
+    <li><a href="<?php echo home_url('search'); ?>">Search</a></li>
+    <li><a href="<?php echo home_url('site_map'); ?>">Site Map</a></li>
+    <li><a href="<?php echo home_url('privacy-policy'); ?>">Privacy Policy</a></li>
+    <li><a href="<?php echo home_url('disclaimer'); ?>">Disclaimer</a></li>
+  </ul>
+<?php }
 
 add_action('init', 'mainstreettaxpros_create_post_type');
 function mainstreettaxpros_create_post_type(){
