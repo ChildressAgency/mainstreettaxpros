@@ -321,6 +321,16 @@ function mainstreettaxpros_create_post_type(){
     'supports' => array('title', 'editor', 'revisions', 'page-attributes')
   );
   register_post_type('resources_cpt', $resources_args);
+  register_taxonomy('resources_categories',
+    'resources_cpt',
+    array(
+      'show_admin_column' => true,
+      'labels' => array(
+        'name' => 'Resources Categories',
+        'singular' => 'Resource Category'
+      )
+    )
+  );
 
   $services_labels => array(
     'name' => 'Services',
@@ -338,6 +348,16 @@ function mainstreettaxpros_create_post_type(){
     'supports' => array('title', 'editor', 'revisions', 'page-attributes')
   );
   register_post_type('services_cpt', $services_args);
+  register_taxonomy('services_categories',
+    'services_cpt',
+    array(
+      'show_admin_column' => true,
+      'labels' => array(
+        'name' => 'Services Categories',
+        'singular' => 'Services Category'
+      )
+    )
+  );
 }
 
 if(function_exists('acf_add_options_page')){

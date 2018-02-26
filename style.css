@@ -346,33 +346,33 @@ section>.container-fluid{
   border-radius:0;
 }
 
-.resources-nav .resource>a{
+.sidebar-nav .sidebar>a{
   font-size:26px;
   font-family:"Roboto", sans-serif;
   font-weight:700;
   color:#424242;
 }
-.resources-nav .resources-sub-nav>li>a,
-.resources-nav .resources-sub-sub-nav>li>a{
+.sidebar-nav .sidebar-sub-nav>li>a,
+.sidebar-nav .sidebar-sub-sub-nav>li>a{
   color:#424242;
   font-weight:500;
 }
-.resources-nav .resources-sub-sub-nav{
+.sidebar-nav .sidebar-sub-sub-nav{
   padding-left:25px;
 }
-.resources-nav .resources-sub-sub-nav>li>a{
+.sidebar-nav .sidebar-sub-sub-nav>li>a{
   font-size:14px;
 }
-.resources-nav li>a{
+.sidebar-nav li>a{
   padding-top:0;
   padding-bottom:0;
 }
-.resources-nav .resource{
+.sidebar-nav .sidebar{
   margin-bottom:40px;
 }
-.resources-nav li.active>a,
-.resources-nav li>a:hover,
-.resources-nav li>a:focus{
+.sidebar-nav li.active>a,
+.sidebar-nav li>a:hover,
+.sidebar-nav li>a:focus{
   color:#b9e937;
   background-color:transparent;
 }
@@ -524,7 +524,7 @@ footer{
   #our-clients ul{
     column-count:3;
   }
-  .resources-sidebar{
+  .sidebar-sidebar{
     border-right:1px solid #424242;
   }
 }
