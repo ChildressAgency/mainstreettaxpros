@@ -61,7 +61,7 @@
             'menu_class' => 'nav navbar-nav',
             'menu_id' => '',
             'echo' => true,
-            'fallback_cb' => 'mainstreettextpros_colophon_fallback_menu',
+            'fallback_cb' => 'mainstreettaxpros_colophon_fallback_menu',
             'items_wrap' => '<ul id="%1$s" class="%2$s">',
             'depth' => 1,
             'walker' => new wp_bootstrap_navwalker()

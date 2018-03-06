@@ -486,6 +486,22 @@ footer{
   text-decoration:none;
 }
 
+#services-nav>h2,
+#resources-nav>h2,
+.wsp-container>h2{
+  font-size:26px;
+}
+.sidebar-nav li>a,
+.wsp-container a{
+  color:#666;
+  font-weight:500;
+}
+.sidebar-nav .current_page_item>a,
+.wsp-container a:hover{
+  color:#b9e937;
+  text-decoration:none;
+}
+
 
 @media (max-width:767px){
   .masthead{

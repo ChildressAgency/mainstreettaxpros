@@ -4,8 +4,9 @@
   $resources_cats = get_terms(array(
     'taxonomy' => 'resources_categories',
     'parent' => 0,
-    'meta_key' => 'menu_order',
-    'orderby' => 'meta_value'
+    //'meta_key' => 'menu_order',
+    'orderby' => 'ID',
+    'hide_empty' => false
   ));
 
   if(!empty($resources_cats)):
@@ -35,6 +36,7 @@
                   'child_of' => $parent_page_id, 
                   'post_type' => 'resources_cpt',
                   'echo' => false,
+                  'title_li' => ''
                 ));
                 if($children) : ?>
                   <ul>

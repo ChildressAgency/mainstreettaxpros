@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <main id="main">
+  <main id="main" style="padding-top:0; padding-bottom:0;">
     <div class="container-fluid container-sm-height">
       <div class="row row-sm-height">
         <div class="col-sm-6 col-sm-height contact-info-side">
@@ -25,6 +25,6 @@
     </div>
   </main>
   <section id="google-map">
-    <?php the_field('google_map_embed_code'); ?>
+    <?php the_field('google_map_embed_code', 'option'); ?>
   </section>
 <?php get_footer(); ?>

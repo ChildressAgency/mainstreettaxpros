@@ -50,15 +50,15 @@
           <div class="row team-row">
             <div class="col-sm-3">
               <?php if(get_sub_field('team_member_image')): ?>
-                <img src="<?php the_sub_field('team_member_image'); ?>" class="img-responsive img-circle center-block" alt="" />
+                <img src="<?php the_sub_field('team_member_image'); ?>" class="img-responsive img-circle center-block" alt="Team Member Image" />
               <?php else: ?>
-                <span class="dashicons dashicons-businessman img-circle"></span>
+                <img src="http://placehold.it/200x200?text=Team%20Member" class="img-responsive img-circle center-block" alt="Team Member Image" />
               <?php endif; ?>
             </div>
             <div class="col-sm-9">
               <div class="team-member-info">
                 <h3><?php the_sub_field('team_member_name'); ?> - <?php the_sub_field('team_member_title'); ?></h3>
-                <?php the_field('team_member_bio'); ?>
+                <?php the_sub_field('team_member_bio'); ?>
               </div>
             </div>
           </div>

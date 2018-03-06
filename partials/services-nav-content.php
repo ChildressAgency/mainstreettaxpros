@@ -1,11 +1,13 @@
 <nav id="services-nav">
 <?php
   $current_page_id = get_the_ID();
+  
   $services_cats = get_terms(array(
     'taxonomy' => 'services_categories',
     'parent' => 0,
-    'meta_key' => 'menu_order',
-    'orderby' => 'meta_value'
+    //'meta_key' => 'menu_order',
+    'orderby' => 'ID',
+    'hide_empty' => false
   ));
 
   if(!empty($services_cats)):
@@ -35,6 +37,7 @@
                   'child_of' => $parent_page_id, 
                   'post_type' => 'services_cpt',
                   'echo' => false,
+                  'title_li' => ''
                 ));
                 if($children) : ?>
                   <ul>
