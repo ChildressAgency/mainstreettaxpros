@@ -49,7 +49,11 @@
         <?php while(have_rows('team_members')): the_row(); ?>
           <div class="row team-row">
             <div class="col-sm-3">
-              <img src="<?php the_sub_field('team_member_image'); ?>" class="img-responsive img-circle center-block" alt="" />
+              <?php if(get_sub_field('team_member_image')): ?>
+                <img src="<?php the_sub_field('team_member_image'); ?>" class="img-responsive img-circle center-block" alt="" />
+              <?php else: ?>
+                <span class="dashicons dashicons-businessman img-circle"></span>
+              <?php endif; ?>
             </div>
             <div class="col-sm-9">
               <div class="team-member-info">

@@ -47,7 +47,7 @@
       $header_nav_args = array(
         'theme_location' => 'header_nav',
         'menu' => '',
-        'container' => 'div'>,
+        'container' => 'div',
         'container_class' => 'navbar-collapse collapse',
         'container_id' => 'navbar',
         'menu_class' => 'nav navbar-nav',

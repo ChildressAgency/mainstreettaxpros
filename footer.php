@@ -15,7 +15,7 @@
             'theme_location' => 'footer_nav',
             'menu' => '',
             'container' => '',
-            'menu_class' => 'nav navbar-nav'>,
+            'menu_class' => 'nav navbar-nav',
             'menu_id' => '',
             'echo' => true,
             'fallback_cb' => 'mainstreettaxpros_footer_fallback_menu',

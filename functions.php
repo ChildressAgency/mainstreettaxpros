@@ -1,10 +1,10 @@
 <?php
-/*
+
 add_action('wp_footer', 'show_template');
 function show_template() {
 	global $template;
 	print_r($template);
-}*/
+}
 
 add_action('wp_enqueue_scripts', 'jquery_cdn');
 function jquery_cdn(){
@@ -297,7 +297,7 @@ function mainstreettaxpros_colophon_fallback_menu(){ ?>
   <ul class="nav navbar-nav">
     <li><a href="https://www.securefirmportal.com/Account/Login/9186">Login</a></li>
     <li><a href="<?php echo home_url('search'); ?>">Search</a></li>
-    <li><a href="<?php echo home_url('site_map'); ?>">Site Map</a></li>
+    <li><a href="<?php echo home_url('site-map'); ?>">Site Map</a></li>
     <li><a href="<?php echo home_url('privacy-policy'); ?>">Privacy Policy</a></li>
     <li><a href="<?php echo home_url('disclaimer'); ?>">Disclaimer</a></li>
   </ul>
@@ -305,19 +305,19 @@ function mainstreettaxpros_colophon_fallback_menu(){ ?>
 
 add_action('init', 'mainstreettaxpros_create_post_type');
 function mainstreettaxpros_create_post_type(){
-  $resources_labels => array(
+  $resources_labels = array(
     'name' => 'Resources',
     'singular_name' => 'Resource',
     'menu_name' => 'Resources',
     'add_new_item' => 'Add New Resource',
     'search_items' => 'Search Resources'
   );
-  $resources_args => array(
+  $resources_args = array(
     'labels' => $resources_labels,
     'public' => true,
     'menu_position' => 5,
     'hierarchical' => true,
-    'menu_icon' => 'dashicons-analytics'
+    'menu_icon' => 'dashicons-analytics',
     'supports' => array('title', 'editor', 'revisions', 'page-attributes')
   );
   register_post_type('resources_cpt', $resources_args);
@@ -325,6 +325,7 @@ function mainstreettaxpros_create_post_type(){
     'resources_cpt',
     array(
       'show_admin_column' => true,
+      'hierarchical' => true,
       'labels' => array(
         'name' => 'Resources Categories',
         'singular' => 'Resource Category'
@@ -332,19 +333,19 @@ function mainstreettaxpros_create_post_type(){
     )
   );
 
-  $services_labels => array(
+  $services_labels = array(
     'name' => 'Services',
     'singular_name' => 'Service',
     'menu_name' => 'Services',
     'add_new_item' => 'Add New Service',
     'search_items' => 'Search Services'
   );
-  $services_args => array(
+  $services_args = array(
     'labels' => $services_labels,
     'public' => true,
     'menu_position' => 6,
     'hierarchical' => true,
-    'menu_icon' => 'dashicons-groups'
+    'menu_icon' => 'dashicons-groups',
     'supports' => array('title', 'editor', 'revisions', 'page-attributes')
   );
   register_post_type('services_cpt', $services_args);
@@ -352,6 +353,7 @@ function mainstreettaxpros_create_post_type(){
     'services_cpt',
     array(
       'show_admin_column' => true,
+      'hierarchical' => true,
       'labels' => array(
         'name' => 'Services Categories',
         'singular' => 'Services Category'
